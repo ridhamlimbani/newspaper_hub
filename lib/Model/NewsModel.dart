@@ -33,7 +33,7 @@ class NewsModel {
     url: json["url"] ?? "",
     urlToImage: json["urlToImage"] ?? "",
     publishedAt: DateTime.parse(json["publishedAt"]),
-    content: json["content"],
+    content: json["content"] ?? "",
   );
 
   Map<String, dynamic> toJson() => {
